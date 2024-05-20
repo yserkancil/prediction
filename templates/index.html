@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Attack Risk Prediction</title>
+</head>
+<body>
+    <h1>Heart Attack Risk Prediction</h1>
+    <form method="POST">
+        <label for="oldpeak">oldpeak değeri:</label><br>
+        <input type="text" id="oldpeak" name="oldpeak"><br>
+        <label for="thal">thal değeri:</label><br>
+        <input type="text" id="thal" name="thal"><br>
+        <label for="cp">cp değeri:</label><br>
+        <input type="text" id="cp" name="cp"><br>
+        <label for="thalach">thalach değeri:</label><br>
+        <input type="text" id="thalach" name="thalach"><br>
+        <label for="ca">ca değeri:</label><br>
+        <input type="text" id="ca" name="ca"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if result %}
+    <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
