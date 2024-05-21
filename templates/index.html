@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heart Attack Risk Prediction</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ana Sayfa</title>
+    <style>
+        body { background-color: #060608; }
+        .content-text { padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 87vh; background-size: cover; background-position: center; }
+        .button { position: absolute; padding: 10px 15px; text-decoration: none; color: #ff9494; border: 1px solid #fff; border-radius: 15px; font-weight: bold; }
+        .top-left { top: 240px; left: 400px; }
+        .top-right { top: 240px; right: 400px; }
+        .top-center { top: 50px; left: 50%; transform: translateX(-50%); }
+        .bottom-right { bottom: 150px; right: 400px; }
+        .bottom-left { bottom: 150px; left: 400px; }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <body>
-    <h1>Heart Attack Risk Prediction</h1>
-    <form method="POST">
-        <label for="oldpeak">oldpeak değeri:</label><br>
-        <input type="text" id="oldpeak" name="oldpeak"><br>
-        <label for="thal">thal değeri:</label><br>
-        <input type="text" id="thal" name="thal"><br>
-        <label for="cp">cp değeri:</label><br>
-        <input type="text" id="cp" name="cp"><br>
-        <label for="thalach">thalach değeri:</label><br>
-        <input type="text" id="thalach" name="thalach"><br>
-        <label for="ca">ca değeri:</label><br>
-        <input type="text" id="ca" name="ca"><br><br>
-        <input type="submit" value="Submit">
-    </form>
-    {% if result %}
-    <p>{{ result }}</p>
-    {% endif %}
+    <div class="content-text">
+        <div style="background-image: url('model.jpeg'); background-size: contain; top: 50px; padding: 300px 220px; position: relative;"></div>
+        <a href="{{ url_for('kalpkrizi') }}" class="button top-right">Kalp Krizi</a>
+    </div>
 </body>
 </html>

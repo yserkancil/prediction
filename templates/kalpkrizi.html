@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalp Krizi</title>
+    <style>
+        body { background-color: #060608; background-image: url("kalp.jpeg"); background-size: cover; background-position: center; background-repeat: no-repeat; color: #fff; font-family: Arial, sans-serif; }
+        a { text-decoration: none; color: #fff; }
+        .proje { display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: rgba(9, 9, 9, 0.7); border-radius: 15px; border: 2px solid #fff; max-width: 600px; margin: 150px auto; padding: 20px; }
+        .input { margin: 10px; }
+        .textbox-container { margin: 15px; }
+        .button-container { text-align: center; margin: 20px; }
+        .custom { font-size: 18px; color: rgb(9, 128, 197); background-color: #fff; }
+        .bottom-right { bottom: 80px; right: 400px; position: absolute; padding: 10px 15px; text-decoration: none; color: rgb(9, 128, 197); background-color: #fff; border: 2px solid rgb(4, 99, 154); border-radius: 15px; font-weight: bold; }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <div class="proje">
+        <form method="POST">
+            <div class="textbox-container">
+                <label>Aşağıdaki Bilgileri Doldurunuz:</label>
+            </div>
+            <br>
+            <div class="textbox-container">
+                <label for="textbox1">Oldpeak Değerini Giriniz:</label>
+                <input type="text" id="textbox1" name="textbox1">
+            </div>
+            <div class="textbox-container">
+                <label for="textbox2">Thal Değerini Giriniz:</label>
+                <input type="text" id="textbox2" name="textbox2">
+            </div>
+            <div class="textbox-container">
+                <label for="textbox3">Cp Değerini Giriniz:</label>
+                <input type="text" id="textbox3" name="textbox3">
+            </div>
+            <div class="textbox-container">
+                <label for="textbox4">Thalach Değerini Giriniz:</label>
+                <input type="text" id="textbox4" name="textbox4">
+            </div>
+            <div class="textbox-container">
+                <label for="textbox5">Ca Değerini Giriniz:</label>
+                <input type="text" id="textbox5" name="textbox5">
+            </div>
+            <div class="button-container">
+                <button type="submit" class="custom">Hesapla</button>
+            </div>
+        </form>
+        <a href="{{ url_for('index') }}" class="button bottom-right">Ana Sayfaya Dön</a>
+    </div>
+</body>
+</html>
+

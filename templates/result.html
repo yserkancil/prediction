@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heart Attack Risk Prediction Result</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonuç</title>
+    <style>
+        body { background-color: #060608; color: #fff; font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .result { text-align: center; }
+    </style>
 </head>
 <body>
-    <h1>Heart Attack Risk Prediction Result</h1>
-    <p>{{ result }}</p>
+    <div class="result">
+        <h1>Kalp Krizi Tahmin Sonucu</h1>
+        <p>{{ result }}</p>
+        <a href="{{ url_for('index') }}">Ana Sayfaya Dön</a>
+    </div>
 </body>
 </html>
+
+
+
+
